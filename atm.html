@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cajero Automatico</title>
+    <style type="text/css">
+        h1 {color: black; font-family: Arial, Helvetica, sans-serif; }
+        div,p { color: black; font-family: Arial, Helvetica, sans-serif; }
+        body { background-color: #918d8d; }
+        .foto {margin-right: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Cajero Automatico</h1>
+    <p>
+        <img src="cajero.gif" />
+    </p>
+    <p>Por favor indique el valor a retirar:
+        <input type="number" id="dinero" onkeydown="playSound(event)"/> <!--el atributo number no permite poner letras solo para navgadores 
+            modernos, sino se pone el atributo "text" -->
+        <input type="button" value= "Extraer" id="extraer"  />
+    </p>
+    <div id="resultado">
+
+    </div>
+    <script src="cajero.js">
+
+    </script>
+</body>
+</html>
